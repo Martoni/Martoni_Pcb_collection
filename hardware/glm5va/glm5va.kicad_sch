@@ -4,6 +4,11 @@
 	(generator_version "8.0")
 	(uuid "8eef8cd7-b778-4a3e-9eb1-1596f2ae044a")
 	(paper "A4")
+	(title_block
+		(title "Convert 2.5V signals -> 5V")
+		(date "2025-01-20")
+		(rev "v0.1")
+	)
 	(lib_symbols
 		(symbol "74xx:74HC245"
 			(pin_names
