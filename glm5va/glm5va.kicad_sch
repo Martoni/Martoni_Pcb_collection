@@ -2966,7 +2966,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 82.55) (xy 233.68 82.55)
+			(xy 224.79 82.55) (xy 227.33 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3716,7 +3716,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 82.55) (xy 243.84 82.55)
+			(xy 234.95 82.55) (xy 238.76 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4530,15 +4530,15 @@
 		(dnp no)
 		(uuid "3ef2a69f-7732-4cc4-af9f-5f9b24d35897")
 		(property "Reference" "C1"
-			(at 81.28 40.64 90)
+			(at 81.534 43.688 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "C"
-			(at 81.28 43.18 90)
+		(property "Value" "100n"
+			(at 80.772 53.086 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4589,7 +4589,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 237.49 82.55 90)
+		(at 231.14 82.55 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4597,7 +4597,7 @@
 		(dnp no)
 		(uuid "4c146c59-13db-4805-a422-04a59984c2d2")
 		(property "Reference" "R4"
-			(at 237.236 80.01 90)
+			(at 230.886 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4605,7 +4605,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 237.236 85.344 90)
+			(at 230.886 85.344 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4613,7 +4613,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 84.328 90)
+			(at 231.14 84.328 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4622,7 +4622,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 237.49 82.55 0)
+			(at 231.14 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4631,7 +4631,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 237.49 82.55 0)
+			(at 231.14 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5337,7 +5337,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 243.84 82.55 270)
+		(at 238.76 82.55 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5347,7 +5347,7 @@
 		(fields_autoplaced yes)
 		(uuid "776c807d-174c-4135-9119-2fac08e8f197")
 		(property "Reference" "#PWR015"
-			(at 240.03 82.55 0)
+			(at 234.95 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5356,7 +5356,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 247.65 82.5499 90)
+			(at 242.57 82.5499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5365,7 +5365,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 243.84 82.55 0)
+			(at 238.76 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5374,7 +5374,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 243.84 82.55 0)
+			(at 238.76 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5383,7 +5383,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 243.84 82.55 0)
+			(at 238.76 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6111,7 +6111,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100n"
 			(at 232.41 52.07 90)
 			(effects
 				(font
@@ -6398,7 +6398,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x10_Odd_Even"
+		(property "Value" "BANK_xx1"
 			(at 147.32 111.76 0)
 			(effects
 				(font
