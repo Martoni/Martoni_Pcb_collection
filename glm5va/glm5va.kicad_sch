@@ -2801,6 +2801,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "pwr"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 252.73 24.13)
@@ -2813,6 +2909,14 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "271f111a-9bd6-49dd-bc03-fa2acda7e309")
+	)
+	(no_connect
+		(at 153.67 138.43)
+		(uuid "bd4a32ba-0f51-4ae6-a88a-ab17fbee426e")
+	)
+	(no_connect
+		(at 140.97 138.43)
+		(uuid "f22772dc-b951-4e0d-ab4c-cec13e807895")
 	)
 	(wire
 		(pts
@@ -3126,6 +3230,26 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 92.71) (xy 104.14 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51332b62-1ed9-464d-8491-5697df5adcc7")
+	)
+	(wire
+		(pts
+			(xy 278.13 21.59) (xy 278.13 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "525f26b8-27bd-4913-97a0-34c034ab7feb")
+	)
+	(wire
+		(pts
 			(xy 185.42 35.56) (xy 185.42 43.18)
 		)
 		(stroke
@@ -3153,16 +3277,6 @@
 			(type default)
 		)
 		(uuid "5728e3df-9f0f-4ecb-b25a-d35bfb9d4944")
-	)
-	(wire
-		(pts
-			(xy 104.14 49.53) (xy 104.14 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58d1ddde-ecd2-408c-a7e8-96d371bc741e")
 	)
 	(wire
 		(pts
@@ -3233,16 +3347,6 @@
 			(type default)
 		)
 		(uuid "620bc016-7ef6-4a18-bed5-5dc6f097fce4")
-	)
-	(wire
-		(pts
-			(xy 104.14 92.71) (xy 104.14 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "636eff76-63a9-4de8-a6bf-9ef3f80a238c")
 	)
 	(wire
 		(pts
@@ -3423,6 +3527,16 @@
 			(type default)
 		)
 		(uuid "856350cf-4610-4d22-889b-e66e12cfcbbf")
+	)
+	(wire
+		(pts
+			(xy 269.24 20.32) (xy 269.24 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86a9477a-cf8c-4b6a-b364-5b40e1e5c7a3")
 	)
 	(wire
 		(pts
@@ -3836,6 +3950,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 49.53) (xy 104.14 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1169bc6-3aa0-4647-8696-12801fbdbdde")
+	)
+	(wire
+		(pts
 			(xy 147.32 62.23) (xy 156.21 62.23)
 		)
 		(stroke
@@ -4033,8 +4157,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04ee1ff1-515f-4d60-a423-81ac6e6bc2a6")
-		(property "Reference" "FPGA_LED2"
-			(at 181.61 25.4 0)
+		(property "Reference" "D2"
+			(at 182.372 28.702 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4043,7 +4167,7 @@
 			)
 		)
 		(property "Value" "0603"
-			(at 189.23 21.59 0)
+			(at 188.468 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4113,7 +4237,7 @@
 		(instances
 			(project "glm5va"
 				(path "/8eef8cd7-b778-4a3e-9eb1-1596f2ae044a"
-					(reference "FPGA_LED2")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -4181,6 +4305,72 @@
 			(project "glm5va"
 				(path "/8eef8cd7-b778-4a3e-9eb1-1596f2ae044a"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 278.13 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f6a9ade-2e8a-4a93-aa81-e5eea42d888e")
+		(property "Reference" "#FLG01"
+			(at 278.13 19.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 278.13 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 278.13 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 278.13 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73ab5d95-a5ad-4bde-94b3-4cd6291d26d3")
+		)
+		(instances
+			(project ""
+				(path "/8eef8cd7-b778-4a3e-9eb1-1596f2ae044a"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -4663,7 +4853,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4dfe66a8-033b-443e-9b2c-058159d99da9")
-		(property "Reference" "LED3"
+		(property "Reference" "D3"
 			(at 161.29 28.448 0)
 			(effects
 				(font
@@ -4673,7 +4863,7 @@
 			)
 		)
 		(property "Value" "0603"
-			(at 164.084 35.56 0)
+			(at 168.402 27.686 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4743,7 +4933,7 @@
 		(instances
 			(project "glm5va"
 				(path "/8eef8cd7-b778-4a3e-9eb1-1596f2ae044a"
-					(reference "LED3")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -5471,6 +5661,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 269.24 20.32 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84ce8ec8-c228-40f5-8806-685b6bcfd00c")
+		(property "Reference" "#PWR026"
+			(at 269.24 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 269.24 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 269.24 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 269.24 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 269.24 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca51df6d-8aef-46fa-a09c-3c3f963c44d4")
+		)
+		(instances
+			(project "glm5va"
+				(path "/8eef8cd7-b778-4a3e-9eb1-1596f2ae044a"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "OLIMEX_RCL:R")
 		(at 175.26 46.99 270)
 		(unit 1)
@@ -5488,8 +5745,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2k/R0402"
-			(at 177.8 40.64 0)
+		(property "Value" "2.2k"
+			(at 177.8 44.704 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5636,6 +5893,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 269.24 24.13 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87dc84ee-3eba-422f-87aa-bd639786ae3b")
+		(property "Reference" "#FLG02"
+			(at 269.24 26.035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 269.24 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 269.24 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 269.24 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 269.24 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6edbf7fc-d08e-446b-b328-74db3b0729fc")
+		)
+		(instances
+			(project ""
+				(path "/8eef8cd7-b778-4a3e-9eb1-1596f2ae044a"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "OLIMEX_Diodes:LED")
 		(at 175.26 30.48 90)
 		(unit 1)
@@ -5644,8 +5967,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "88f4b7d1-c125-45ab-a4ab-2f3008cfdbc5")
-		(property "Reference" "FPGA_LED4"
-			(at 171.45 25.4 0)
+		(property "Reference" "D4"
+			(at 171.704 28.448 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5654,7 +5977,7 @@
 			)
 		)
 		(property "Value" "0603"
-			(at 179.07 21.59 0)
+			(at 178.308 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5724,7 +6047,7 @@
 		(instances
 			(project "glm5va"
 				(path "/8eef8cd7-b778-4a3e-9eb1-1596f2ae044a"
-					(reference "FPGA_LED4")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -5932,6 +6255,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 278.13 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a19bfae5-39ba-4bcb-9ba0-d1e46b8af890")
+		(property "Reference" "#PWR025"
+			(at 278.13 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 278.13 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 278.13 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6929b5e5-2bb3-4d00-af21-8b04a86a5cf4")
+		)
+		(instances
+			(project ""
+				(path "/8eef8cd7-b778-4a3e-9eb1-1596f2ae044a"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "OLIMEX_RCL:R")
 		(at 185.42 46.99 270)
 		(unit 1)
@@ -5949,8 +6338,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2k/R0402"
-			(at 187.96 40.64 0)
+		(property "Value" "2.2k"
+			(at 187.96 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6294,8 +6683,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c0d931c7-1e77-4ba4-97ef-00ed672df982")
-		(property "Reference" "FPGA_LED1"
-			(at 191.77 25.4 0)
+		(property "Reference" "D1"
+			(at 192.532 28.702 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6304,7 +6693,7 @@
 			)
 		)
 		(property "Value" "0603"
-			(at 199.39 21.59 0)
+			(at 198.882 28.194 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6374,7 +6763,7 @@
 		(instances
 			(project "glm5va"
 				(path "/8eef8cd7-b778-4a3e-9eb1-1596f2ae044a"
-					(reference "FPGA_LED1")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -7054,8 +7443,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2k/R0402"
-			(at 198.12 40.64 0)
+		(property "Value" "2.2k"
+			(at 198.12 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7149,8 +7538,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2k/R0402"
-			(at 167.64 40.64 0)
+		(property "Value" "2.2k"
+			(at 167.894 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
