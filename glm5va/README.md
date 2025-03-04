@@ -9,3 +9,7 @@ Adapt board for Olimex [GatemateA1-EVB board](https://www.olimex.com/Products/FP
 ## Gerber
 
 Tutorial to make gerber : https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-8
+
+## Ressources
+
+- [Hub75 with tangnano](https://learn.lushaylabs.com/led-panel-hub75/)
