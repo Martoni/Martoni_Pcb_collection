@@ -53,7 +53,7 @@ module ledsbasic_tb ();
 
     initial begin
         $display("Testbench begin");
-        #10000
+        #1000000
         $display("end testbench");
         $finish();
     end

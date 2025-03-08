@@ -1,0 +1,49 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Mar  3 21:23:20 2025
+[*]
+[dumpfile] "/home/fabien/projets/Martoni_Pcb_collection/glm5va/rtl/ledsbasic/ledsbasic_tb.vcd"
+[dumpfile_mtime] "Mon Mar  3 21:23:14 2025"
+[dumpfile_size] 176655
+[savefile] "/home/fabien/projets/Martoni_Pcb_collection/glm5va/rtl/ledsbasic/ledsbasic.gtkw"
+[timestart] 0
+[size] 1920 1022
+[pos] -1 -1
+*-16.983904 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ledsbasic_tb.
+[treeopen] ledsbasic_tb.lb0.
+[sst_width] 212
+[signals_width] 118
+[sst_expanded] 1
+[sst_vpaned_height] 296
+@28
+ledsbasic_tb.lb0.clk
+@29
+ledsbasic_tb.lb0.m0.state[2:0]
+@22
+ledsbasic_tb.lb0.m0.timer[10:0]
+@200
+-output
+@28
+ledsbasic_tb.lb0.GLM_A
+ledsbasic_tb.lb0.GLM_B
+ledsbasic_tb.lb0.GLM_C
+ledsbasic_tb.lb0.GLM_G1
+ledsbasic_tb.lb0.GLM_G2
+ledsbasic_tb.lb0.GLM_R1
+ledsbasic_tb.lb0.GLM_R2
+ledsbasic_tb.lb0.GLM_B1
+ledsbasic_tb.lb0.GLM_B2
+ledsbasic_tb.lb0.GLM_CLK
+ledsbasic_tb.lb0.GLM_LAT
+ledsbasic_tb.lb0.GLM_OE
+ledsbasic_tb.lb0.m0.rd_b0_bit
+@22
+ledsbasic_tb.lb0.m0.rd_b0[3:0]
+@28
+ledsbasic_tb.lb0.GLM_LED1
+ledsbasic_tb.lb0.GLM_LED2
+ledsbasic_tb.lb0.GLM_LED3
+ledsbasic_tb.lb0.GLM_LED4
+[pattern_trace] 1
+[pattern_trace] 0
