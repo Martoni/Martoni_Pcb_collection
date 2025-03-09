@@ -1,0 +1,21 @@
+Net "clk"  Loc = "IO_SB_A8" | SCHMITT_TRIGGER=true;
+Net "rst"  Loc = "IO_EB_B0"; # SW3
+
+Net "led1" Loc = "IO_SB_B6"; # olimex fpga led
+Net "r0"   Loc = "IO_EB_A8";
+Net "r1"   Loc = "IO_EB_A7";
+Net "g0"   Loc = "IO_EB_A4";
+Net "g1"   Loc = "IO_EB_A3";
+Net "b0"   Loc = "IO_EB_B8";
+Net "b1"   Loc = "IO_EB_B7";
+Net "addr[0]"    Loc = "IO_EB_A6";
+Net "addr[1]"    Loc = "IO_EB_A2";
+Net "addr[2]"    Loc = "IO_EB_B6";
+Net "oe"   Loc = "IO_EB_B5";
+Net "latch"  Loc = "IO_EB_A1";
+Net "clk_out"  Loc = "IO_EB_A5";
+
+Net "GLM_LED1" Loc = "IO_EB_B4";
+Net "GLM_LED2" Loc = "IO_EB_B3";
+Net "GLM_LED3" Loc = "IO_EB_B1";
+Net "GLM_LED4" Loc = "IO_EB_B2";

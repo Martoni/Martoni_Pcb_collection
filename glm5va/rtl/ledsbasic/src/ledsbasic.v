@@ -54,10 +54,10 @@ module ledsbasic (
     reg latch_pulse = 1'b0;
     assign GLM_LAT = LATCH;
 
-    reg [2:0] ADDR = 0;
-    assign GLM_A = ADDR[2];
-    assign GLM_B = ADDR[1];
-    assign GLM_C = ADDR[0];
+    reg [3:0] ADDR = 0;
+    assign GLM_A = ADDR[3];
+    assign GLM_B = ADDR[2];
+    assign GLM_C = ADDR[1];
 
     wire [2:0] RGB0;
     wire [2:0] RGB1;
@@ -121,7 +121,7 @@ module ledsbasic (
     end
 endmodule
 
-`define CLK_DIV 9
+`define CLK_DIV 14
 module clock_divisor (
     input       clk,
     output  clk_out,
