@@ -11,23 +11,20 @@
 // parameters
 localparam PIXEL_COLUMNS = 32; // screen width in pixels
 localparam PIXEL_LINES   = 16; // screen height in pixels/2
-localparam OE_INTENSITY  = 10; // screen display intensity (min=1; max=128; off=0)
+localparam OE_INTENSITY  = 127; // screen display intensity (min=1; max=128; off=0)
 
 module ledsbasic (
     input  clk,
     output led1,
 
     /* Matrix LED driver */
-    output GLM_R1,
-    output GLM_R2,
-    output GLM_G1,
-    output GLM_G2,
-    output GLM_B1,
-    output GLM_B2,
+    output [2:0] RGB0,
+    output [2:0] RGB1,
 
     output GLM_A,
     output GLM_B,
     output GLM_C,
+    output GLM_D,
 
     output GLM_OE,
     output GLM_LAT,
@@ -36,14 +33,12 @@ module ledsbasic (
     /* glm5va leds */
     output GLM_LED1,
     output GLM_LED2,
-    output GLM_LED3,
-    output GLM_LED4
+    output GLM_LED3
 );
     assign led1=1'b1;
     assign GLM_LED1=1'b1; 
     assign GLM_LED2=1'b0;
     assign GLM_LED3=1'b0;
-    assign GLM_LED4=1'b1;
 
     wire clk_out;
     assign GLM_CLK = clk_out;
@@ -58,17 +53,18 @@ module ledsbasic (
     assign GLM_A = ADDR[3];
     assign GLM_B = ADDR[2];
     assign GLM_C = ADDR[1];
+    assign GLM_D = ADDR[0];
 
-    wire [2:0] RGB0;
-    wire [2:0] RGB1;
-
-    assign GLM_G1 = RGB0[0];
-    assign GLM_R1 = RGB0[1];  
-    assign GLM_B1 = RGB0[2];
-
-    assign GLM_R2 = RGB1[0];
-    assign GLM_G2 = RGB1[1];
-    assign GLM_B2 = RGB1[2];
+//    wire [2:0] RGB0;
+//    wire [2:0] RGB1;
+//
+//    assign GLM_R1 = RGB0[0];
+//    assign GLM_G1 = RGB0[1];
+//    assign GLM_B1 = RGB0[2];
+//
+//    assign GLM_R2 = RGB1[0];
+//    assign GLM_G2 = RGB1[1];
+//    assign GLM_B2 = RGB1[2];
 
     reg[6:0] counter = 0;
     
@@ -99,9 +95,12 @@ module ledsbasic (
     assign clk_out = (counter<PIXEL_COLUMNS) ? clk_master : 1;
 
     // design pattern
-    assign RGB0 = (counter==5) ? 3'b111 : 3'b100; 
-    assign RGB1 = 3'b001;
-    
+//    assign RGB0 = (counter==5) ? 3'b111 : 3'b100; 
+//    assign RGB1 = 3'b001;
+
+    assign RGB0 = 3'b100;
+    assign RGB1 = 3'b010;
+
     always @(posedge clk) begin
         if(clk_master_rise === 1'b1) begin
             // increment clock counter
@@ -115,13 +114,12 @@ module ledsbasic (
             end else if ((counter==PIXEL_COLUMNS+1)) begin
                 LATCH        <= 0;
                 counter      <= 7'd0;
-//                LAT_EN       <=    0;
             end
         end
     end
 endmodule
 
-`define CLK_DIV 14
+`define CLK_DIV 7 
 module clock_divisor (
     input       clk,
     output  clk_out,

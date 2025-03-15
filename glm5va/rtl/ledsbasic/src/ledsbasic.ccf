@@ -54,12 +54,15 @@ Net "clk"  Loc = "IO_SB_A8" | SCHMITT_TRIGGER=true;
 Net "rst"  Loc = "IO_EB_B0"; # SW3
 
 Net "led1" Loc = "IO_SB_B6"; # olimex fpga led
-Net "GLM_R1"   Loc = "IO_EB_A8";
-Net "GLM_R2"   Loc = "IO_EB_A7";
-Net "GLM_G1"   Loc = "IO_EB_A4";
-Net "GLM_G2"   Loc = "IO_EB_A3";
-Net "GLM_B1"   Loc = "IO_EB_B8";
-Net "GLM_B2"   Loc = "IO_EB_B7";
+
+Net "RGB0[0]"   Loc = "IO_EB_A8";
+Net "RGB0[1]"   Loc = "IO_EB_A4";
+Net "RGB0[2]"   Loc = "IO_EB_B8";
+
+Net "RGB1[0]"   Loc = "IO_EB_A7";
+Net "RGB1[1]"   Loc = "IO_EB_A3";
+Net "RGB1[2]"   Loc = "IO_EB_B7";
+
 Net "GLM_A"    Loc = "IO_EB_A6";
 Net "GLM_B"    Loc = "IO_EB_A2";
 Net "GLM_C"    Loc = "IO_EB_B6";
@@ -69,4 +72,4 @@ Net "GLM_CLK"  Loc = "IO_EB_A5";
 Net "GLM_LED1" Loc = "IO_EB_B4";
 Net "GLM_LED2" Loc = "IO_EB_B3";
 Net "GLM_LED3" Loc = "IO_EB_B1";
-Net "GLM_LED4" Loc = "IO_EB_B2";
+Net "GLM_D" Loc = "IO_EB_B2";
